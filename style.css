@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Antonio');
+@import url('https://fonts.googleapis.com/css?family=Ms Madi');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Antonio;
+
+}
+body{
+    min-height: 100vh;
+     background-color: #1A1A1d;
+}
+.main-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #202020;
+    top:0;
+}
+#logo{
+    object-fit: cover;
+    width: 100px;
+}
+#logoSection{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#navigation{
+ display: flex;
+ flex-direction: column;
+
+}
+nav{
+  margin-top: 20px;
+}
+nav a {
+    color:white;
+   text-align: center;
+   align-items: center;
+    width: 98px;
+    height: 40px;
+    border-bottom: 3px solid #1A1A1d;
+    margin-top: 10px;
+}
+
+nav a:hover,
+nav a:active{
+color: #c3073F;
+transition: 0.3s ease;
+}
+.jobtitle{
+    top:-10px;
+    margin-left: 2%;
+    color:white;
+    
+}
+svg{
+    width: 20px;
+}
+#HomeSection{
+    position: relative;
+    top:90px;
+}
+.staticText,#dynamicText{
+    color:white;
+    margin-left: 3.5em;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.trail{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    border:1px solid #c3073F;
+    background-color:#6f2232;
+    position: fixed;
+    animation: come 2s linear forwards;
+}
+
+@keyframes come{
+    0%{
+        transform: scale(0);
+
+    }
+    10%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+
+    }
+    100%{
+        transform: scale(1) translateY(50px);
+        opacity: 0;
+
+    }
+}
+
+.backgroundhtml::after{
+    content: '<html>';
+    font-family: Ms Madi;
+    color: #515152;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 6rem;
+    top:-80px;
+}
+.backgroundbody::after{
+    content: '<body>';
+    font-family: Ms Madi;
+    color: #515152;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 9rem;
+    top:-40px;
+}
+.backgroundh1::after{
+    content: '<h1>';
+    font-family: Ms Madi;
+    color: #515152;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 12rem;
+    top:0px;
+}
+.backgroundh12::after{
+    content: '</h1>';
+    font-family: Ms Madi;
+    color: #515152;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 19rem;
+   bottom: -20px;
+}
+.backgroundhbodyclose::after{
+    content: '</body>';
+    font-family: Ms Madi;
+    color: #515152;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 10rem;
+   bottom: -180px;
+}
+.backgroundhhtmlclose::after{
+    content: '</html>';
+    font-family: Ms Madi;
+    color: #515152;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 4rem;
+   bottom: -250px;
+}
+.contactmebttn::after{
+    content: 'Contact Me';
+    font-family: Antonio;
+    background-color: #1A1A1d;
+    border:2px dashed #c3073F;
+    color:white;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-left: 16rem;
+   bottom: -120px;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.contactmebttn{
+    z-index: 4;
+}
+.contactmebttn:hover{
+    background-color:  #c3073F;
+
+}
